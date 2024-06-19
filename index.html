@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="jsCalendar.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- CARROUSEL LANDING -->
+    <div class="carousel-container">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://globalbajajcms.azurewebsites.net/media/11046/image3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://globalbajajcms.azurewebsites.net/media/11045/image2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://globalbajajcms.azurewebsites.net/media/11044/image1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Botón superpuesto en la parte central inferior -->
+      <div class="custom-container d-flex flex-column w-100">
+        <button
+          class="px-5 py-3 bg-secondary border-none text-uppercase fw-bold text-white mx-auto fs-5"
+        >
+          Cotiza tu moto
+        </button>
+        <div class="text-white d-flex justify-content-between px-5 py-5">
+          <div class="">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+
+          <div class="">
+            <button
+              class="rounded-circle border-none bg-primary border border-white carousel-control-custom"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button
+              class="rounded-circle border-none bg-primary border border-white carousel-control-custom"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FIN CAROUSEL LANDING -->
+
+    <!-- SECCION TITULO -->
+
+    <div class="py-3">
+      <div class="border-l-primary">
+        <div class="px-3">
+          <h3 class="text-uppercase text-gray fs-6">Nuestros modelos pulsar</h3>
+          <h1 class="text-uppercase text-primary fs-1 fw-bold">
+            selecciona tu
+          </h1>
+          <h1 class="text-uppercase text-primary fs-1 fw-bold">
+            estilo o necesidad
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- FIN SECCION TITULO -->
+
+    <!-- SECCION CARRUSEL -->
+
+    <div class="carousel-container">
+      <div id="carouselSecond" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://globalbajajcms.azurewebsites.net/media/11044/image1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://globalbajajcms.azurewebsites.net/media/11045/image2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://globalbajajcms.azurewebsites.net/media/11046/image3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselSecond"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselSecond"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Botón superpuesto en la parte central inferior -->
+      <div
+        class="custom-container-title d-flex flex-column w-100 justify-content-start align-items-start"
+      >
+        <h2 class="px-5 w-100 text-uppercase fw-bold text-white mx-auto f-120">
+          pulsar
+        </h2>
+        <h2 class="px-5 w-100 text-uppercase fw-bold text-white mx-auto f-120">
+          n250
+        </h2>
+        <p class="px-5 text-uppercase text-white fw-medium">
+          Ver especificaciones
+        </p>
+      </div>
+      <div class="custom-container d-flex flex-column w-100">
+        <button
+          class="px-5 py-3 custom-button bg-secondary border-none text-uppercase fw-bold text-white mx-auto fs-5"
+        >
+          Cotiza tu moto
+        </button>
+      </div>
+    </div>
+
+    <!-- FIN SECCION CARRUSEL -->
+
+    <!-- SECCIONES DE INFO -->
+    <div class="w-100">
+      <!-- Card -->
+      <div
+        class="container-image"
+        style="background-image: url('/images/Recurso\ 2.png')"
+      >
+        <div class="card-body text-white">
+          <div class="border-l-primary px-3 pt-5">
+            <h5 class="card-title fs-1 text-uppercase fw-bold">TECNOLOGÍA</h5>
+            <h5 class="card-title fs-1 text-uppercase fw-bold">PULSAR</h5>
+            <p class="card-text text-uppercase fs-4">
+              conoce más sobre la tecnología pulsar.
+            </p>
+          </div>
+
+          <div class="f-120 text-gray-secondary fw-bold family-orbitron px-5">
+            01
+          </div>
+        </div>
+      </div>
+      <!-- Card -->
+    </div>
+
+    <!-- FIN SECCIONES DE INFO -->
+
+    <!-- SECCIONES DE INFO -->
+    <div class="w-100">
+      <!-- Card -->
+      <div
+        class="container-image"
+        style="background-image: url('/images/Recurso\ 3.png')"
+      >
+        <div class="card-body text-white">
+          <div class="border-l-primary px-3 pt-5">
+            <h5 class="card-title fs-1 text-uppercase fw-bold">multimedia</h5>
+            <h5 class="card-title fs-1 text-uppercase fw-bold">PULSAR</h5>
+            <p class="card-text text-uppercase fs-4">
+              Descubre imágenes, videos y más
+            </p>
+          </div>
+
+          <div class="f-120 text-gray-secondary fw-bold family-orbitron px-5">
+            02
+          </div>
+        </div>
+      </div>
+      <!-- Card -->
+    </div>
+
+    <!-- FIN SECCIONES DE INFO -->
+
+    <!-- SECCION TITULO -->
+
+    <div class="py-3">
+      <div class="border-l-primary">
+        <div class="px-3">
+          <h3 class="text-uppercase text-gray fs-6">
+            últimas noticias del mundo motero
+          </h3>
+          <h1 class="text-uppercase text-primary fs-1 fw-bold">blog pulsar</h1>
+        </div>
+      </div>
+    </div>
+    <!-- FIN SECCION TITULO -->
+
+    <!-- INICIO SECCION BLOG -->
+    <div class="">
+      <div class="card-custom">
+        <div class="card-text-container">
+          <div class="">
+            <h5 class="card-title fw-bold fs-1">Kilometraje de una moto:</h5>
+            <h5 class="card-title fw-bold fs-1">
+              ¿es hora de llevarla al taller?
+            </h5>
+            <p class="card-text fw-medium">
+              El kilometraje de una moto puede darte la respuesta, indicandote
+              la cantidad de kilómetros que llevas recorridos.
+            </p>
+            <button
+              class="px-5 py-3 custom-button bg-primary border-none text-uppercase fw-bold text-white mx-auto fs-5"
+            >
+              Leer más
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN SECCION BLOG -->
+
+    <!-- SECCION TITULO -->
+
+    <div class="pt-3">
+      <div class="border-l-primary">
+        <div class="px-3">
+          <div class="d-flex gap-2">
+            <i class="fa-brands fa-instagram text-danger"></i>
+            <h3 class="text-uppercase text-primary fs-6 fw-semibold">
+              @pulsarmotosperu
+            </h3>
+          </div>
+
+          <h1 class="text-uppercase text-primary fs-1 fw-bold">
+            síguenos en instagram
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- FIN SECCION TITULO -->
+
+    <div
+      class="d-flex justify-content-end align-items-center text-center text-uppercase px-2 text-medium fw-normal fs-5 gap-2"
+    >
+      <div>seguir</div>
+      <img src="/images/arrow.png" class="w-20" alt="..." />
+    </div>
+
+    <!-- SECCION INSTRAGRAM -->
+
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      data-use-service-core
+      defer
+    ></script>
+    <div
+      class="elfsight-app-e8c2d0d4-1417-4b6c-aa8b-0b14de2f05a6"
+      data-elfsight-app-lazy
+    ></div>
+    <!-- FIN SECCION INSTAGRAM -->
+
+    <!-- SECCION TITULO -->
+
+    <div class="pt-3">
+      <div class="border-l-primary">
+        <div class="px-3">
+          <div class="d-flex gap-2">
+            <i class="fa-brands fa-instagram text-danger"></i>
+            <h3 class="text-uppercase text-primary fs-6 fw-semibold">
+              @pulsarmotosperu
+            </h3>
+          </div>
+
+          <h1 class="text-uppercase text-primary fs-1 fw-bold">
+            síguenos en tiktok
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- FIN SECCION TITULO -->
+
+    <div
+      class="d-flex justify-content-end align-items-center text-center text-uppercase px-2 text-medium fw-normal fs-5 gap-2"
+    >
+      <div>seguir</div>
+      <img src="/images/arrow.png" class="w-20" alt="..." />
+    </div>
+
+    <!-- SECCION TIKTOK -->
+
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      data-use-service-core
+      defer
+    ></script>
+    <div
+      class="elfsight-app-3e81e145-45cb-4bfe-9129-e1a2b0dcbe84"
+      data-elfsight-app-lazy
+    ></div>
+
+    <!-- FIN SECCION TIKTOK -->
+
+    <!-- SECCION EVENTOS -->
+
+    <!-- INICIO SELECCION EVENTO -->
+    <section class="row">
+      <div class="col-12">
+        <div class="py-3">
+          <div class="border-l-primary">
+            <div class="px-3">
+              <h3 class="text-uppercase text-gray fs-6">
+                historial de eventos pulsar
+              </h3>
+              <h1 class="text-uppercase text-primary fs-1 fw-bold">eventos</h1>
+            </div>
+          </div>
+        </div>
+
+        <form class="bg-black p-5">
+          <h3 class="text-uppercase text-white fs-4 fw-bold">buscar por:</h3>
+          <div class="row">
+            <div class="col-12 col-md-4 form-floating mb-3 form-floating">
+              <select
+                class="form-select"
+                id="floatingPassword"
+                aria-label="Default select example"
+              >
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <label for="floatingPassword text-uppercase">Departamento</label>
+            </div>
+
+            <div class="col-12 col-md-4 form-floating mb-3 form-floating">
+              <select
+                class="form-select"
+                id="floatingPassword"
+                aria-label="Default select example"
+              >
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <label for="floatingPassword text-uppercase">Provincia</label>
+            </div>
+
+            <div class="col-12 col-md-4 form-floating mb-3 form-floating">
+              <select
+                class="form-select"
+                id="floatingPassword"
+                aria-label="Default select example"
+              >
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <label for="floatingPassword text-uppercase">Distrito</label>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-2 bg-primary">
+              <button
+                type="submit"
+                class="px-5 py-3 custom-button bg-primary border-none text-uppercase fw-bold text-white mx-auto fs-5 w-100"
+              >
+                buscar
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div class="container-calendar mx-auto px-4 py-3">
+          <div id="calendar" data-language="es"></div>
+        </div>
+      </div>
+      <!-- FIN SELECCION EVENTO -->
+
+      <!-- SECCION DETALLES EVENTO -->
+      <div class="col-12">
+        <div class="py-3">
+          <div class="px-3">
+            <p class="text-uppercase text-primary fs-1 fw-bold">
+              evento pulsar day
+            </p>
+            <div class="row gap-md-0 gap-4">
+              <img src="/images/evento.png" class="col-12 col-md-4" alt="..." />
+              <div class="col-12 col-md-8 row align-items-center justify-content-center">
+                <div>
+                  <p class="lh-1 fw-bold text-primary">
+                    Día:
+                    <span class="fw-normal text-black">Martes 16 de mayo</span>
+                  </p>
+                  <p class="lh-1 fw-bold text-primary">
+                    Hora:
+                    <span class="fw-normal text-black">9:00 am a 1:00 pm</span>
+                  </p>
+                  <p class="lh-1 fw-bold text-primary">
+                    Lugar:
+                    <span class="fw-normal text-black"
+                      >Autodisa Surquillo Av. Republica de Panamá 5101,
+                      Surquillo.</span
+                    >
+                  </p>
+                  <p class="lh-1">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minus velit ea voluptate optio, omnis quod alias sunt! Iusto
+                    molestias, quam dolor, ea, assumenda accusantium animi sunt
+                    nesciunt nemo quod vero.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-3">
+          <div class="px-3 text-uppercase">
+            <p class="text-primary fs-1 fw-bold">pruebas de manejo</p>
+            <div class="d-flex lh-1">
+              <div class="d-flex gap-5 p-3 col-4 bg-gray-secondary">
+                <div>
+                  <p>almajer global</p>
+                  <p>av. san martin 370 t. n/a</p>
+                  <p>horario: <span>l-v 10am a 6pm</span></p>
+                </div>
+                <div>
+                  <div
+                    class="d-flex gap-1 justify-content-start align-items-start"
+                  >
+                    <img src="/images/moto.png" class="" alt="..." />
+                    <p>pulsar n250</p>
+                  </div>
+                  <div
+                    class="d-flex gap-1 justify-content-start align-items-start"
+                  >
+                    <img src="/images/moto.png" class="" alt="..." />
+                    <p>pulsar ns200</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex gap-5 p-3 col-4">
+                <div>
+                  <p>almajer global</p>
+                  <p>av. san martin 370 t. n/a</p>
+                  <p>horario: <span>l-v 10am a 6pm</span></p>
+                </div>
+                <div>
+                  <div
+                    class="d-flex gap-1 justify-content-start align-items-start"
+                  >
+                    <img src="/images/moto.png" class="" alt="..." />
+                    <p>pulsar n250</p>
+                  </div>
+                  <div
+                    class="d-flex gap-1 justify-content-start align-items-start"
+                  >
+                    <img src="/images/moto.png" class="" alt="..." />
+                    <p>pulsar ns200</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex gap-5 p-3 col-4 bg-gray-secondary">
+                <div>
+                  <p>almajer global</p>
+                  <p>av. san martin 370 t. n/a</p>
+                  <p>horario: <span>l-v 10am a 6pm</span></p>
+                </div>
+                <div>
+                  <div
+                    class="d-flex gap-1 justify-content-start align-items-start"
+                  >
+                    <img src="/images/moto.png" class="" alt="..." />
+                    <p>pulsar n250</p>
+                  </div>
+                  <div
+                    class="d-flex gap-1 justify-content-start align-items-start"
+                  >
+                    <img src="/images/moto.png" class="" alt="..." />
+                    <p>pulsar ns200</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN SECCION DETALLES EVENTO -->
+    </section>
+    <!-- FIN SECCIÓN EVENTOS -->
+
+    <!-- SCRIPTS -->
+    <script src="jsCalendar.js"></script>
+    <script src="jsCalendar.lang.es.js"></script>
+    <script>
+      var myCalendar = jsCalendar.new("#calendar");
+
+      myCalendar.onDateClick(function (event, date) {
+        var day = date.getDay();
+        var month = date.getMonth() + 1;
+
+        var current_day = jsCalendar.tools.stringToDate(
+          new Date().toLocaleDateString()
+        );
+        selectDate = date;
+
+        myCalendar.onDateRender(function (date, element, info) {
+          if (date.getTime() == selectDate.getTime()) {
+            /*element.style.fontWeight = '600';
+    			element.style.border = '2px solid #ba4362';
+    			element.style.borderRadius  = '100%';
+    			element.style.color = '#072A77';
+    			*/
+
+            element.style.fontWeight = "bold";
+            element.style.background = "#eff4f8";
+            element.style.color = "#007cc2";
+            element.style.borderRadius = "100%";
+            element.style.border = "2px solid #ba4362";
+          }
+        });
+
+        console.log("current_day", current_day.getTime());
+        console.log("select_day", date.getTime());
+        var validate = current_day.getTime() <= date.getTime() ? true : false;
+        if (validate) {
+          $("#select_date").val(day);
+          $("#select_month").val(month);
+          $("#select_fecha").val(selectDate.toLocaleDateString());
+          $("#formCalendar").click();
+        } else {
+          console.log("msg: fecha anterior no disponible");
+          msg.innerHTML = "<p>Fecha seleccionada no disponible</p>";
+          showSwal(msg, "error");
+        }
+
+        myCalendar.refresh();
+      });
+
+      myCalendar.onDayRender(function (index, element, info) {
+        //PINTAR LOS DIAS DE SEMANA
+        if (index == 0 || index == 6) {
+          element.style.color = "#a6a6a6";
+        }
+      });
+
+      myCalendar.onDateRender(function (date, element, info) {
+        //PINTAR FECHA DE FIN DE SEMANA
+        if (!info.isCurrent && (date.getDay() == 0 || date.getDay() == 6)) {
+          element.style.fontWeight = "600";
+          element.style.color = "#a6a6a6";
+        }
+
+        //PINTAR FECHAS
+        /*if(myCalendar.getSelected().includes(date.getTime())) {
+            element.style.fontWeight = 'bold';
+            element.style.background = '#C60000';
+            console.log('incluye');
+        }*/
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
