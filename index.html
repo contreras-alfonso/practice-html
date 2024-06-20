@@ -199,58 +199,64 @@
     <!-- FIN SECCION CARRUSEL -->
 
     <!-- SECCIONES DE INFO -->
-    <section class="row">
-      <div class="col-12 col-md-6">
-        <!-- Card -->
-        <div
-          class="container-image"
-          style="background-image: url('/images/Recurso\ 2.png')"
-        >
-          <div class="card-body text-white">
-            <div class="border-l-primary px-3 pt-5">
-              <h5 class="card-title fs-1 text-uppercase fw-bold">
-                tecnología pulsar
-              </h5>
-              <p class="card-text text-uppercase fs-4">
-                conoce más sobre la tecnología pulsar.
-              </p>
-            </div>
+    <div class="container-fluid">
+      <section class="row">
+        <div class="col-12 col-md-6 p-0">
+          <!-- Card -->
+          <div
+            class="container-image"
+            style="background-image: url('/images/Recurso\ 2.png')"
+          >
+            <div class="card-body text-white">
+              <div class="border-l-primary px-3 pt-5">
+                <h5 class="card-title fs-1 text-uppercase fw-bold">
+                  tecnología pulsar
+                </h5>
+                <p class="card-text text-uppercase fs-4">
+                  conoce más sobre la tecnología pulsar.
+                </p>
+              </div>
 
-            <div class="f-120 text-gray-secondary fw-bold family-orbitron px-5">
-              01
-            </div>
-          </div>
-        </div>
-        <!-- Card -->
-      </div>
-
-      <!-- FIN SECCIONES DE INFO -->
-
-      <!-- SECCIONES DE INFO -->
-      <div class="col-12 col-md-6">
-        <!-- Card -->
-        <div
-          class="container-image"
-          style="background-image: url('/images/Recurso\ 3.png')"
-        >
-          <div class="card-body text-white">
-            <div class="border-l-primary px-3 pt-5">
-              <h5 class="card-title fs-1 text-uppercase fw-bold">
-                multimedia pulsar
-              </h5>
-              <p class="card-text text-uppercase fs-4">
-                Descubre imágenes, videos y más
-              </p>
-            </div>
-
-            <div class="f-120 text-gray-secondary fw-bold family-orbitron px-5">
-              02
+              <div
+                class="f-120 text-gray-secondary fw-bold family-orbitron px-5"
+              >
+                01
+              </div>
             </div>
           </div>
+          <!-- Card -->
         </div>
-        <!-- Card -->
-      </div>
-    </section>
+
+        <!-- FIN SECCIONES DE INFO -->
+
+        <!-- SECCIONES DE INFO -->
+        <div class="col-12 col-md-6 p-0">
+          <!-- Card -->
+          <div
+            class="container-image"
+            style="background-image: url('/images/Recurso\ 3.png')"
+          >
+            <div class="card-body text-white">
+              <div class="border-l-primary px-3 pt-5">
+                <h5 class="card-title fs-1 text-uppercase fw-bold">
+                  multimedia pulsar
+                </h5>
+                <p class="card-text text-uppercase fs-4">
+                  Descubre imágenes, videos y más
+                </p>
+              </div>
+
+              <div
+                class="f-120 text-gray-secondary fw-bold family-orbitron px-5"
+              >
+                02
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+      </section>
+    </div>
     <!-- FIN SECCIONES DE INFO -->
 
     <!-- SECCION TITULO -->
@@ -375,194 +381,210 @@
     <!-- SECCION EVENTOS -->
 
     <!-- INICIO SELECCION EVENTO -->
-    <section class="row">
-      <div class="col-12">
-        <div class="py-3">
-          <div class="border-l-primary">
+    <div class="overflow-x-hidden">
+      <section class="row">
+        <div class="col-12">
+          <div class="py-3">
+            <div class="border-l-primary">
+              <div class="px-3">
+                <h3 class="text-uppercase text-gray fs-6">
+                  historial de eventos pulsar
+                </h3>
+                <h1 class="text-uppercase text-primary fs-1 fw-bold">
+                  eventos
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <form class="bg-black p-5">
+            <h3 class="text-uppercase text-white fs-4 fw-bold">buscar por:</h3>
+            <div class="row">
+              <div class="col-12 col-md-4 form-floating mb-3 form-floating">
+                <select
+                  class="form-select"
+                  id="floatingPassword"
+                  aria-label="Default select example"
+                >
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <label for="floatingPassword text-uppercase"
+                  >Departamento</label
+                >
+              </div>
+
+              <div class="col-12 col-md-4 form-floating mb-3 form-floating">
+                <select
+                  class="form-select"
+                  id="floatingPassword"
+                  aria-label="Default select example"
+                >
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <label for="floatingPassword text-uppercase">Provincia</label>
+              </div>
+
+              <div class="col-12 col-md-4 form-floating mb-3 form-floating">
+                <select
+                  class="form-select"
+                  id="floatingPassword"
+                  aria-label="Default select example"
+                >
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <label for="floatingPassword text-uppercase">Distrito</label>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="col-12 col-md-2 bg-primary">
+                <button
+                  type="submit"
+                  class="px-5 py-3 custom-button bg-primary border-none text-uppercase fw-bold text-white mx-auto fs-5 w-100"
+                >
+                  buscar
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <div class="container-calendar mx-auto px-4 py-3">
+            <div id="calendar" data-language="es"></div>
+          </div>
+        </div>
+        <!-- FIN SELECCION EVENTO -->
+
+        <!-- SECCION DETALLES EVENTO -->
+        <div class="col-12">
+          <div class="py-3">
             <div class="px-3">
-              <h3 class="text-uppercase text-gray fs-6">
-                historial de eventos pulsar
-              </h3>
-              <h1 class="text-uppercase text-primary fs-1 fw-bold">eventos</h1>
-            </div>
-          </div>
-        </div>
-
-        <form class="bg-black p-5">
-          <h3 class="text-uppercase text-white fs-4 fw-bold">buscar por:</h3>
-          <div class="row">
-            <div class="col-12 col-md-4 form-floating mb-3 form-floating">
-              <select
-                class="form-select"
-                id="floatingPassword"
-                aria-label="Default select example"
-              >
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <label for="floatingPassword text-uppercase">Departamento</label>
-            </div>
-
-            <div class="col-12 col-md-4 form-floating mb-3 form-floating">
-              <select
-                class="form-select"
-                id="floatingPassword"
-                aria-label="Default select example"
-              >
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <label for="floatingPassword text-uppercase">Provincia</label>
-            </div>
-
-            <div class="col-12 col-md-4 form-floating mb-3 form-floating">
-              <select
-                class="form-select"
-                id="floatingPassword"
-                aria-label="Default select example"
-              >
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <label for="floatingPassword text-uppercase">Distrito</label>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center align-items-center">
-            <div class="col-12 col-md-2 bg-primary">
-              <button
-                type="submit"
-                class="px-5 py-3 custom-button bg-primary border-none text-uppercase fw-bold text-white mx-auto fs-5 w-100"
-              >
-                buscar
-              </button>
-            </div>
-          </div>
-        </form>
-
-        <div class="container-calendar mx-auto px-4 py-3">
-          <div id="calendar" data-language="es"></div>
-        </div>
-      </div>
-      <!-- FIN SELECCION EVENTO -->
-
-      <!-- SECCION DETALLES EVENTO -->
-      <div class="col-12">
-        <div class="py-3">
-          <div class="px-3">
-            <p class="text-uppercase text-primary fs-1 fw-bold">
-              evento pulsar day
-            </p>
-            <div class="row gap-md-0 gap-4">
-              <img src="/images/evento.png" class="col-12 col-md-4" alt="..." />
-              <div
-                class="col-12 col-md-8 row align-items-center justify-content-center"
-              >
-                <div>
-                  <p class="lh-1 fw-bold text-primary">
-                    Día:
-                    <span class="fw-normal text-black">Martes 16 de mayo</span>
-                  </p>
-                  <p class="lh-1 fw-bold text-primary">
-                    Hora:
-                    <span class="fw-normal text-black">9:00 am a 1:00 pm</span>
-                  </p>
-                  <p class="lh-1 fw-bold text-primary">
-                    Lugar:
-                    <span class="fw-normal text-black"
-                      >Autodisa Surquillo Av. Republica de Panamá 5101,
-                      Surquillo.</span
-                    >
-                  </p>
-                  <p class="lh-1">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Minus velit ea voluptate optio, omnis quod alias sunt! Iusto
-                    molestias, quam dolor, ea, assumenda accusantium animi sunt
-                    nesciunt nemo quod vero.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="py-3">
-          <div class="text-uppercase">
-            <p class="px-3 text-primary fs-1 fw-bold">pruebas de manejo</p>
-            <div class="row lh-1">
-              <div class="row p-3 col-12 col-lg-4 bg-gray-secondary">
-                <div class="col text-center">
-                  <p>almajer global</p>
-                  <p>av. san martin 370 t. n/a</p>
-                  <p>horario: <span>l-v 10am a 6pm</span></p>
-                </div>
-                <div class="col text-center">
-                  <div
-                    class="d-flex gap-1 justify-content-start align-items-start"
-                  >
-                    <img src="/images/moto.png" class="" alt="..." />
-                    <p>pulsar n250</p>
-                  </div>
-                  <div
-                    class="d-flex gap-1 justify-content-start align-items-start"
-                  >
-                    <img src="/images/moto.png" class="" alt="..." />
-                    <p>pulsar ns200</p>
+              <p class="text-uppercase text-primary fs-1 fw-bold">
+                evento pulsar day
+              </p>
+              <div class="row gap-md-0 gap-4">
+                <img
+                  src="/images/evento.png"
+                  class="col-12 col-md-4"
+                  alt="..."
+                />
+                <div
+                  class="col-12 col-md-8 row align-items-center justify-content-center"
+                >
+                  <div>
+                    <p class="lh-1 fw-bold text-primary">
+                      Día:
+                      <span class="fw-normal text-black"
+                        >Martes 16 de mayo</span
+                      >
+                    </p>
+                    <p class="lh-1 fw-bold text-primary">
+                      Hora:
+                      <span class="fw-normal text-black"
+                        >9:00 am a 1:00 pm</span
+                      >
+                    </p>
+                    <p class="lh-1 fw-bold text-primary">
+                      Lugar:
+                      <span class="fw-normal text-black"
+                        >Autodisa Surquillo Av. Republica de Panamá 5101,
+                        Surquillo.</span
+                      >
+                    </p>
+                    <p class="lh-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Minus velit ea voluptate optio, omnis quod alias sunt!
+                      Iusto molestias, quam dolor, ea, assumenda accusantium
+                      animi sunt nesciunt nemo quod vero.
+                    </p>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="row p-3 col-12 col-lg-4">
-                <div class="col text-center">
-                  <p>almajer global</p>
-                  <p>av. san martin 370 t. n/a</p>
-                  <p>horario: <span>l-v 10am a 6pm</span></p>
-                </div>
-                <div class="col">
-                  <div
-                    class="d-flex gap-1 justify-content-start align-items-start"
-                  >
-                    <img src="/images/moto.png" class="" alt="..." />
-                    <p>pulsar n250</p>
+          <div class="py-3">
+            <div class="text-uppercase">
+              <p class="px-3 text-primary fs-1 fw-bold">pruebas de manejo</p>
+              <div class="overflow-x-hidden">
+                <div class="row justify-content-between lh-1 p-0">
+                  <div class="row p-3 col-12 col-lg-4 bg-gray-secondary">
+                    <div class="col text-center">
+                      <p>almajer global</p>
+                      <p>av. san martin 370 t. n/a</p>
+                      <p>horario: <span>l-v 10am a 6pm</span></p>
+                    </div>
+                    <div class="col text-center">
+                      <div
+                        class="d-flex gap-1 justify-content-start align-items-start"
+                      >
+                        <img src="/images/moto.png" class="" alt="..." />
+                        <p>pulsar n250</p>
+                      </div>
+                      <div
+                        class="d-flex gap-1 justify-content-start align-items-start"
+                      >
+                        <img src="/images/moto.png" class="" alt="..." />
+                        <p>pulsar ns200</p>
+                      </div>
+                    </div>
                   </div>
-                  <div
-                    class="d-flex gap-1 justify-content-start align-items-start"
-                  >
-                    <img src="/images/moto.png" class="" alt="..." />
-                    <p>pulsar ns200</p>
-                  </div>
-                </div>
-              </div>
 
-              <div class="row p-3 col-12 col-lg-4 bg-gray-secondary">
-                <div class="col text-center">
-                  <p>almajer global</p>
-                  <p>av. san martin 370 t. n/a</p>
-                  <p>horario: <span>l-v 10am a 6pm</span></p>
-                </div>
-                <div class="col">
-                  <div
-                    class="d-flex gap-1 justify-content-start align-items-start"
-                  >
-                    <img src="/images/moto.png" class="" alt="..." />
-                    <p>pulsar n250</p>
+                  <div class="row p-3 col-12 col-lg-4">
+                    <div class="col text-center">
+                      <p>almajer global</p>
+                      <p>av. san martin 370 t. n/a</p>
+                      <p>horario: <span>l-v 10am a 6pm</span></p>
+                    </div>
+                    <div class="col">
+                      <div
+                        class="d-flex gap-1 justify-content-start align-items-start"
+                      >
+                        <img src="/images/moto.png" class="" alt="..." />
+                        <p>pulsar n250</p>
+                      </div>
+                      <div
+                        class="d-flex gap-1 justify-content-start align-items-start"
+                      >
+                        <img src="/images/moto.png" class="" alt="..." />
+                        <p>pulsar ns200</p>
+                      </div>
+                    </div>
                   </div>
-                  <div
-                    class="d-flex gap-1 justify-content-start align-items-start"
-                  >
-                    <img src="/images/moto.png" class="" alt="..." />
-                    <p>pulsar ns200</p>
+
+                  <div class="row p-3 col-12 col-lg-4 bg-gray-secondary">
+                    <div class="col text-center">
+                      <p>almajer global</p>
+                      <p>av. san martin 370 t. n/a</p>
+                      <p>horario: <span>l-v 10am a 6pm</span></p>
+                    </div>
+                    <div class="col">
+                      <div
+                        class="d-flex gap-1 justify-content-start align-items-start"
+                      >
+                        <img src="/images/moto.png" class="" alt="..." />
+                        <p>pulsar n250</p>
+                      </div>
+                      <div
+                        class="d-flex gap-1 justify-content-start align-items-start"
+                      >
+                        <img src="/images/moto.png" class="" alt="..." />
+                        <p>pulsar ns200</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- FIN SECCION DETALLES EVENTO -->
-    </section>
+        <!-- FIN SECCION DETALLES EVENTO -->
+      </section>
+    </div>
     <!-- FIN SECCIÓN EVENTOS -->
 
     <!-- SCRIPTS -->
