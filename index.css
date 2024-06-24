@@ -20,8 +20,8 @@ h2 {
 
 .carousel-control-custom {
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
 }
 
 .carousel-container {
@@ -39,9 +39,6 @@ h2 {
   position: absolute;
   top: 60px;
   z-index: 10;
-}
-.custom-button {
-  /* width: 250px; */
 }
 
 .border-none {
@@ -108,14 +105,81 @@ h2 {
   width: fit-content;
 }
 
+#calendar table thead {
+  padding: 1em;
+}
 
-  #calendar table thead {
-    padding: 1em;
+#calendar table tbody {
+  padding: 1em;
+}
+
+.custom-carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: gray;
+  border: none;
+}
+
+/* Estilo para el indicador activo */
+.custom-carousel-indicators .active {
+  background-color: blue;
+}
+
+/* Estilo para la sección de control del carrusel */
+.custom-indicators-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.carousel-indicators.custom-carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: gray;
+  border: none;
+}
+
+.carousel-indicators.custom-carousel-indicators .active {
+  background-color: blue;
+}
+
+.text-white.d-flex.align-items-center.justify-content-between.px-5.py-5 {
+  justify-content: space-between;
+}
+
+.title-model {
+  font-size: 120px;
+}
+
+@media (max-width: 720px) {
+  .title-model {
+    font-size: 50px;
+    line-height: 40px !important;
+  }
+  .custom-container-title {
+    top: 20px;
+  }
+  .custom-container {
+    bottom: 10px;
   }
 
-  #calendar table tbody {
-    padding: 1em;
+  .carousel-control-custom {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    z-index: 20
   }
+
+  .box {
+    width: 80px;
+    height: 80px;
+    background-color: lightblue;
+  }
+}
+
 /* 
   #calendar table thead {
     padding: 1em 3em;
