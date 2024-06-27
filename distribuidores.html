@@ -117,59 +117,87 @@
     </form>
 
     <!-- Contenedor del mapa -->
-    <div id="map"></div>
+    <div class="container-fluid">
+      <div
+        class="row align-items-center justify-content-center p-3 gap-3 gap-md-0"
+      >
+        <div class="col-12 col-md-6" id="map"></div>
 
-    <div class="w-100 w-md-50 row">
-      <div class="col">
-        <img src="images/pin-red.svg" alt="" />
-        <p class="fw-bold">TIENDA</p>
-      </div>
-      <div class="col">
-        <img src="images/pin-red.svg" alt="" />
-        <p class="fw-bold">REPUESTOS</p>
-      </div>
-      <div class="col">
-        <img src="images/pin-red.svg" alt="" />
-        <p class="fw-bold">TALLERES</p>
-      </div>
-    </div>
-    <div class="overflow-x-hidden">
-      <div class="row justify-content-between lh-1 p-0">
-        <div class="row p-3 col-12 col-lg-4 bg-gray-secondary">
-          <div class="col text-center">
-            <p>almajer global</p>
-            <p>av. san martin 370 t. n/a</p>
-            <p class="text-primary fw-bold">Ver en el mapa</p>
-            <p>horario: <span>l-v 10am a 6pm</span></p>
+        <div class="col-12 col-md-6">
+          <div class="w-100 w-md-50 row mb-3">
+            <div
+              class="col d-flex justify-content-center align-items-center gap-2"
+            >
+              <img src="images/pin-red.svg" alt="" />
+              <p class="fw-bold m-0 text-primary">TIENDA</p>
+            </div>
+            <div
+              class="col d-flex justify-content-center align-items-center gap-2"
+            >
+              <img src="images/pin-red.svg" alt="" />
+              <p class="fw-bold m-0 text-primary">REPUESTOS</p>
+            </div>
+            <div
+              class="col d-flex justify-content-center align-items-center gap-2"
+            >
+              <img src="images/pin-red.svg" alt="" />
+              <p class="fw-bold m-0 text-primary">TALLERES</p>
+            </div>
           </div>
-          <div class="col d-flex flex-column gap-2 text-center">
-            <div class="d-flex gap-1 justify-content-start align-items-center">
-              <img
-                src="images/pin-red.svg"
-                style="width: 16px"
-                class=""
-                alt="..."
-              />
-              <p class="m-0 text-center">Tienda</p>
-            </div>
-            <div class="d-flex gap-1 justify-content-start align-items-start">
-              <img
-                src="images/pin-blue.svg"
-                style="width: 16px"
-                class=""
-                alt="..."
-              />
-              <p class="m-0 text-center">Repuestos</p>
-            </div>
-            <div class="d-flex gap-1 justify-content-start align-items-start">
-              <img
-                src="images/pin-aqua.svg"
-                style="width: 16px"
-                class=""
-                alt="..."
-              />
-              <p class="m-0 text-center">Talleres</p>
-            </div>
+          <div class="overflow-x-hidden" style="height: 450px">
+            <ul class="row gap-2 justify-content-between lh-1 overflow-auto">
+              <li
+                style="border: solid 1px rgb(203, 203, 203)"
+                class="rounded-3 row px-5 py-3 col-12 bg-gray-secondary"
+              >
+                <div class="col-9 text-center">
+                  <p class="text-uppercase">almajer global</p>
+                  <p class="text-uppercase">av. san martin 370 t. n/a</p>
+                  <button
+                    onclick="selectStore({{obj}})"
+                    class="text-uppercase border-0 bg-transparent mb-3 text-primary fw-bold"
+                  >
+                    Ver en el mapa
+                  </button>
+                  <p class="text-uppercase">horario: <span>l-v 10am a 6pm</span></p>
+                </div>
+                <div class="col-3 d-flex flex-column gap-2 text-center">
+                  <div
+                    class="d-flex gap-1 justify-content-start align-items-center"
+                  >
+                    <img
+                      src="images/pin-red.svg"
+                      style="width: 16px"
+                      class=""
+                      alt="..."
+                    />
+                    <p class="m-0 text-center">Tienda</p>
+                  </div>
+                  <div
+                    class="d-flex gap-1 justify-content-start align-items-start"
+                  >
+                    <img
+                      src="images/pin-blue.svg"
+                      style="width: 16px"
+                      class=""
+                      alt="..."
+                    />
+                    <p class="m-0 text-center">Repuestos</p>
+                  </div>
+                  <div
+                    class="d-flex gap-1 justify-content-start align-items-start"
+                  >
+                    <img
+                      src="images/pin-aqua.svg"
+                      style="width: 16px"
+                      class=""
+                      alt="..."
+                    />
+                    <p class="m-0 text-center">Talleres</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

@@ -30,80 +30,85 @@
   </head>
   <body>
     <!-- CARROUSEL LANDING -->
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="https://globalbajajcms.azurewebsites.net/media/11046/image3.jpg"
-            class="d-block w-100"
-            alt="https://globalbajajcms.azurewebsites.net/media/11046/image3.jpg"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://globalbajajcms.azurewebsites.net/media/11045/image2.jpg"
-            class="d-block w-100"
-            alt="https://globalbajajcms.azurewebsites.net/media/11045/image2.jpg"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://globalbajajcms.azurewebsites.net/media/11044/image1.jpg"
-            class="d-block w-100"
-            alt="https://globalbajajcms.azurewebsites.net/media/11044/image1.jpg"
-          />
-        </div>
-      </div>
-      <div class="custom-container d-flex flex-column w-100">
-        <button
-          class="px-3 px-md-5 py-2 py-md-3 py-md-1 bg-secondary border-none text-uppercase fw-bold text-white mx-auto fs-5"
-        >
-          Cotiza tu moto
-        </button>
-        <div
-          class="text-white d-flex align-items-center justify-content-between px-5 py-md-5 py-1"
-        >
-          <div class="carousel-indicators custom-carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+    <div class="carousel-container">
+      <div class="background-container"></div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel-home carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner h-100">
+          <div
+            class="carousel-item active d-flex align-items-center justify-content-center h-100"
+          >
+            <img
+              src="https://pulsar.aios.pe/storage/app/uploads/public/667/ae6/644/667ae6644e315441131372.webp"
+              class="d-block w-50 h-50"
+              alt="https://pulsar.aios.pe/storage/app/uploads/public/667/ae6/644/667ae6644e315441131372.webp"
+            />
           </div>
-          <div>
-            <button
-              class="rounded-circle border-none bg-primary border border-white carousel-control-custom"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <i class="fa-solid fa-chevron-left text-white p-1"></i>
-            </button>
-            <button
-              class="rounded-circle border-none bg-primary border border-white carousel-control-custom"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <i class="fa-solid fa-chevron-right text-white"></i>
-            </button>
+          <div class="carousel-item h-100">
+            <img
+              src="https://globalbajajcms.azurewebsites.net/media/11045/image2.jpg"
+              class="d-block w-100 h-100"
+              alt="https://globalbajajcms.azurewebsites.net/media/11045/image2.jpg"
+            />
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="https://globalbajajcms.azurewebsites.net/media/11044/image1.jpg"
+              class="d-block w-100 h-100"
+              alt="https://globalbajajcms.azurewebsites.net/media/11044/image1.jpg"
+            />
+          </div>
+        </div>
+        <div class="custom-container d-flex flex-column w-100">
+          <button
+            class="px-3 px-md-5 py-2 py-md-3 py-md-1 bg-secondary border-none text-uppercase fw-bold text-white mx-auto fs-5"
+          >
+            Cotiza tu moto
+          </button>
+          <div
+            class="text-white d-flex align-items-center justify-content-between px-5 py-md-5 py-1"
+          >
+            <div class="carousel-indicators custom-carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div>
+              <button
+                class="rounded-circle border-none bg-primary border border-white carousel-control-custom"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <i class="fa-solid fa-chevron-left text-white p-1"></i>
+              </button>
+              <button
+                class="rounded-circle border-none bg-primary border border-white carousel-control-custom"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <i class="fa-solid fa-chevron-right text-white"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -131,12 +136,31 @@
     <!-- SECCION CARRUSEL -->
 
     <div class="carousel-container">
+      <div class="background-container"></div>
       <div id="carouselSecond" class="carousel slide carousel-fade">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active d-flex align-items-center justify-content-center">
+            <div
+            class="custom-container-title d-flex flex-column w-100 justify-content-start align-items-start"
+          >
+            <h2
+              class="px-5 w-100 text-uppercase fw-bold text-white mx-auto title-model"
+            >
+              pulsar
+            </h2>
+            <h2
+              class="px-5 w-100 text-uppercase fw-bold text-white mx-auto title-model"
+            >
+              n250
+            </h2>
+            <p class="px-5 text-uppercase text-white fw-medium">
+              Ver especificaciones
+            </p>
+          </div>
             <img
-              src="https://globalbajajcms.azurewebsites.net/media/11044/image1.jpg"
-              class="d-block w-100"
+              src="https://pulsar.aios.pe/storage/app/uploads/public/667/ae6/644/667ae6644e315441131372.webp"
+              class="d-block w-50"
+              style="margin: 130px 0;"
               alt="..."
             />
           </div>
@@ -174,31 +198,16 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
-      <!-- Botón superpuesto en la parte central inferior -->
-      <div
-        class="custom-container-title d-flex flex-column w-100 justify-content-start align-items-start"
-      >
-        <h2
-          class="px-5 w-100 text-uppercase fw-bold text-white mx-auto title-model"
-        >
-          pulsar
-        </h2>
-        <h2
-          class="px-5 w-100 text-uppercase fw-bold text-white mx-auto title-model"
-        >
-          n250
-        </h2>
-        <p class="px-5 text-uppercase text-white fw-medium">
-          Ver especificaciones
-        </p>
-      </div>
-      <div class="custom-container d-flex flex-column w-100">
-        <button
-          class="px-3 px-md-5 py-2 py-md-3 py-md-1 custom-button bg-secondary border-none text-uppercase fw-bold text-white mx-auto fs-5"
-        >
-          Cotiza tu moto
-        </button>
+
+        <!-- Botón superpuesto en la parte central inferior -->
+
+        <div class="custom-container d-flex flex-column w-100">
+          <button
+            class="px-3 px-md-5 py-2 py-md-3 py-md-1 custom-button bg-secondary border-none text-uppercase fw-bold text-white mx-auto fs-5"
+          >
+            Cotiza tu moto
+          </button>
+        </div>
       </div>
     </div>
 
